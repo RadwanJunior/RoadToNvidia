@@ -44,3 +44,11 @@ The next thing is to model a layer
 - This was just done by modeeling a couple of neurons that each have their own biases, inputs and weights
 
 Stay tuned for arrays vs tensors?
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+p3:
+https://github.com/Sentdex/NNfSiX
+
+Move from python list to a more standardized way of implementing neurons and their outputs in vectors -> moving to more dynamic code as well
+
+Zip() - combines 2 lists into a list of lists -> used in this case to combine the weights and biases
