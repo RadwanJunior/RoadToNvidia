@@ -1,0 +1,46 @@
+I noticed that the main skills to focus on are: Python, Tensorflow, C++ and CUDA.
+
+I planned on working on developing my Python Skills first. I plan to do this through learning about how to create a neural network from scratch in Python:
+https://youtu.be/Wo5dMEP_BbI?si=uLGcGUZXY9Kcet7P
+
+
+General Idea of a neural netowrk:
+![alt text](image.png)
+- Every unique input and ever unique neuron with associated weights are summed together per neuron plus a bias
+- Then it is run through an activation funtion which is done for every layer -> output information
+- Calculate a loss (how wrong the neural network is to fix it)
+
+Idea of a loss function in code:
+![alt text](image-1.png)
+
+Goal of neural networks:
+- Take input data and produce output data that is desired
+
+Training the weights and biases is what the training process actually is
+
+![alt text](image-2.png)
+- The connections between 1 circle(neuron) to the other is a weight
+- Every neuron is a unique bias
+- Each parameter's output impacts the next neuron and overall output
+
+Let's code a nueron:
+Check p1.py
+
+inputs = [1,2,3]
+weights = [0.2,0.8,-0.5]
+bias = 2
+
+output = inputs[0]*weights[0] + inputs[1]*weights[1] + inputs[2]*weights[2] + bias
+print(output)
+![alt text](image-3.png)
+
+We have coded a single neuron that takes in 3 input values, and their weights and has a certain bias on the output. Computes the output
+
+What is an input to a neuron?
+- An actual input from the input layer, being stored in a vector. Could be like input from a sensor for example
+- Outputs from other neurons being passed into this neuron
+
+The next thing is to model a layer
+- This was just done by modeeling a couple of neurons that each have their own biases, inputs and weights
+
+Stay tuned for arrays vs tensors?
