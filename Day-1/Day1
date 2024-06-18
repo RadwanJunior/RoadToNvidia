@@ -52,3 +52,31 @@ https://github.com/Sentdex/NNfSiX
 Move from python list to a more standardized way of implementing neurons and their outputs in vectors -> moving to more dynamic code as well
 
 Zip() - combines 2 lists into a list of lists -> used in this case to combine the weights and biases
+
+Weights and biases are like knobs that tune the prediction
+
+Bias is not different from y=mx+b, where it offsets the output
+
+What is shape?
+- At each dimension, what is the size at that dimension
+
+Shape is (2,4) means it is a 2D array or list -> with 4 elements in each sublist
+
+![alt text](image-4.png)
+![alt text](image-5.png)
+
+What is a homologous list?
+- Same size for each dimension
+
+If we don't have a homologous list, we cant determine dimension
+
+![alt text](image-6.png)
+
+Shape(3,2,4) means there is a big list with 3 sublists and each sublist has 4 elements each
+
+What is a tensor?
+- Object that can be represented as an array
+
+To multiply the inputs array by the weights matrix, we can use the dot product
+
+Continue video at 12:28

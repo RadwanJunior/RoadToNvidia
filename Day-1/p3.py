@@ -29,3 +29,10 @@ for neuron_weights, neuron_bias in zip(weights, biases):
     layer_outputs.append(neuron_output)
 
 print(layer_outputs)
+
+# some_value = -0.5
+# weight = 0.7
+# bias = 0.7
+
+# print(some_value*weight)
+# print(some_value+bias)
