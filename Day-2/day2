@@ -1,0 +1,12 @@
+Dot product is used to multiply 2 vectors together element-wise
+
+Example we are given:
+
+
+The result of the dot product on 2 vectors is a single scalar multiple.
+
+In 1x1 dotproduct it didn't matter for us which list was passed in which argument for the dot() function, but it will matter later when we use different examples
+
+Order of weights, inputs passed to dot() matters as weights is a matrix. Meaning the returned output by the dot product will be at least 3 by x. In this case inputs is a 1d array so the returned value will be 3x1
+
+Need to understand atomic calculations done by dot product to avoid weird shape errors in dot() functions

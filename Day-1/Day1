@@ -78,5 +78,3 @@ What is a tensor?
 - Object that can be represented as an array
 
 To multiply the inputs array by the weights matrix, we can use the dot product
-
-Continue video at 12:28
