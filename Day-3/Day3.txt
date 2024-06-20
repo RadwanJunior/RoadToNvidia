@@ -1,0 +1,32 @@
+Dot product example:
+
+inputs = [1, 2, 3, 2.5]
+
+weights= [[0.2,0.8,-0.5],
+          [0.5,-0.91,0.26, -0.5],
+          [-0.26,-0.27, 0.17, 0.87]]
+
+biases = [2,3,0.5]
+
+output = np.dot(weights, inputs) + biases
+print(output)
+
+What happens in this example?
+- The inputs vector is multiplied by the first list in the weights array, then the 2nd, then the 3rd
+- This returns a vector of [x1,x2,x3] corresponding to the number of lists in the weight array
+- This is then added to the biases[] vector which is also in format [x1,x2,x3] to get a result
+ 
+What is a batch?
+- A 2D array or Matrix that has is a list of sublists. An example is a Shape(8,4) which means a list of sublists, and each sublist holds 4 values
+
+Weight vs bias?
+- Two different ways of approximating something.
+
+The whole idea of inputs, weights and biases is very similiar to the case of y=mx+b. Where
+the input is dot product with the weights and the biases is added to offset
+
+What is an activatoin point?
+- Adjusting weights is completely different than when adjusting biases (which is somewhat pattern like movement)
+
+Manim: a general way to do animations on youtube for videos like these. Maybe make a content creation channel with animations to promote yourself and your skills?
+
