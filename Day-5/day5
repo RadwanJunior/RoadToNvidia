@@ -1,0 +1,56 @@
+Check this opportunity at amazon out:
+https://www.amazon.jobs/en/jobs/2530694/jr-software-development-engineer
+
+Started video p4:
+Neural Networks from Scratch - P.4 Batches, Layers, and Objects
+
+What do batches do?
+- Not the primary reason for a batch, but because parallel calculations are done. The bigger the batch the more parallel operations we can run. A reason why calcutions are done on GPU and not on CPU (due to much larger number of cores for calculations, cpu cores are used for much harder calculations)
+- Helps with generalizations
+
+What is a feature?
+- One of the elements of the input
+
+Why would we increase the batch size from 1 to any number?
+- Instead of calculint the fit line for each point added, 1 at a time, we can calculate the fit after every 4 or 16 for example which makes it more efficient (calculation, resources, and speed wise)
+
+What is the learning rate?
+- How much of the previous knowledge we want to keep compared to the currect knowledge
+
+What is the issue with putting a large batch size, or all at once?
+- This will hurt our generalizations in the sense that the neuron will overfit the line of best fit, causing inaccurate measurements for predications
+
+Batch size 32 is pretty typical
+
+When increasing the input batch size to 3, do we need to change the biases?
+- No, since we are not adding any neurons. Since our layer still has the same weights dimension
+
+Dot product example:
+![alt text](image.png)
+
+RECALL: We have to make sure when multiplying by dot product that the 2nd dimension of the first array matches the 1st dimension of the 2nd array. Example (3x4) X (4x2) = OK. But (3x4) X (3x2) NOT OK (Shape error)
+![alt text](image-1.png) --> example of error for future reference
+
+Need to transpose numpy array weights. Why?
+AT FIRST: ![alt text](image-2.png)
+WHEN BECAME BATCH OF INPUTS: 
+![alt text](image-3.png)
+TRANSPOSED MATRIX:
+![alt text](image-4.png)
+
+Input feature set is commonly denoted as X --> convention in ML
+
+What are hidden layers?
+- As developers we are not in charge of how this changes. But neural network is responsible for tweaking it
+
+How to initialize a layer?
+- 2 ways. 1 from saved model (saved weights and biases). 2nd way is from a new neural network --> need to initalize the weights as randome values between 1->-1 and biases. We use small values because we want values to tend to range from 1 to -1 (to keep it small and simple as possible)
+- Normalize then scale (use smaller values then scale it up to keep same meaning --> will be discussed later)
+
+For weights?
+- Maybe something from -0.1 to 0.1
+
+For Biases?
+- Tend to initialize as zero, but could be avoided in situation when neurons are not firing (to prevent dead network)
+
+So far created a dense layer with forward pass, but missing activation functions as well as other elements like back propogation and loss
