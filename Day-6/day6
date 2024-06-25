@@ -1,0 +1,58 @@
+Started video:
+- Neural Networks from Scratch - P.5 Hidden Layer Activation Functions
+
+Want to apply to apple jobs tonight
+
+For activation function, many different functions can be used.
+
+One of which is the step function:
+- Example: ![alt text](image.png)
+
+Using step functions as activation functions:
+- For each neuron in the neural network, what is being fed through to the activation function is inputs*weights + bias
+- In this case the output will always be a 0 or 1
+![alt text](image-1.png)
+- The output of a neuron will be used in the next neuron's input
+
+Generally output layer will have a different activation function from hidden layers
+
+What is a sigmoid activation function?
+- Easier to train a neural network than a step function
+![alt text](image-2.png)
+- This is due to the granularity of the output
+
+Difference of sigmoid vs step:
+- More granular output, which will be used in next layer's neuron. Very important to decrease loss due to weight of weights/outputs on prediction and optimizer
+- Instead of 1 or 0, output is more precise ![alt text](image-3.png)
+- Can help with understanding how close we were from outputting a "0" or "1" for example and calculate the loss
+
+What is the rectified linear unit activation function?
+- Very simple ![alt text](image-4.png)
+- Very similiar to sigmoid function in the sense of its granularity, however nothing less than 0
+
+Why rectified over sigmoid?
+- Sigmoid has an issue -> vanishing gradient problem??
+- Still granular
+- Very fast due to small calculation
+- Simply works (according to video, need to research? is it because of use cases are always applicable)
+
+What is a linear activation function?
+- y=x. Simply using weight*input + bias. But all outputs have to be linear
+
+Not very useful, in a lot of real world neural network applications:
+![alt text](image-5.png)
+
+rectified would be more like this:
+![alt text](image-6.png)
+- Almost linear, but still very powerful like sigmoid. But still works
+
+Normal weight linearly rectified function:
+![alt text](image-7.png)
+
+Negated:
+![alt text](image-8.png)
+
+What happens when we have 2 neurons, each with their own bias. Takes 1st neuron's output as input:
+![alt text](image-9.png)
+
+Stopped at 10:39
