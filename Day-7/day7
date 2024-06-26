@@ -1,0 +1,52 @@
+Look at morgan stanley postings and get ready for them (Resume, data structures, projects, french)
+
+What is the softmax activation function?
+- Used for output layer classification problem
+
+How to measure how wrong an output is?
+- First compare it to the relative other outputs in the list/neurons -> but kinda hard in rectified linear since each neuron is kinda on its own (so no relative comparision)
+
+What are some issues with this ![alt text](image.png)?
+- Bounding issue
+- Every neuron is exclusive
+- Don't really relate to each other
+- No good solid way of determining how wrong this is in any formal way per sample that comes through -> so we need a new activation function -> softmax activation function (instead of rectified)
+
+![alt text](image-1.png) What do we want the values of the output in the photo to be?
+- Ideally the values would be a probability distribution -> gives us ability to be uniform from sample to sample ALSO from neuron to neuron things will be normalized. Can also measure wrongness or rightness
+
+Instead we can use something like this ![alt text](image-2.png):
+- Where every outputs is like a percentage of how right or wrong the prediction of that neural is 
+
+What is the problem with the rectified linear activation function when it comes to a normal probability distribution for neural network output?
+- Would work but once we get a negative. The ReLU will clip that negative value and replace it with zero -> wrong probability! 
+- [alt text](image-3.png)
+
+What if all the values are negative in the ReLU probability distribution?
+- Impossible to learn from here -> all are zero -> they have been clipped so you have lost value due to clipping and you have no chance of backpropogation because you don't know how wrong or right it is
+
+What if we use absolute values or square the values?
+- Still a problem because we still have to intelligently optimize the values. But those wouldn't be as accurate with this manipulation of the values -> bad chances of backpropgation working correctly
+
+SO WE CAN'T LOSE THE MEANING! SO WHAT DO WE DO?
+- use exponentiation to solve problem of negativity: ![alt text](image-4.png)
+
+Exponentiation makes sure that there is no negative number on our output, and does so without tossing out the "negative value". So it still does it on a scale.
+Example: ![alt text](image-5.png)
+
+Negative value:
+STEP 1: Exponentiation
+STEP 2: Normalize values: ![alt text](image-7.png)
+![alt text](image-6.png) -> normalizing a single output neuron's value divided by the sum of all the other output neurons in the output layer -> gives probability distribution
+
+In image 6 we still have negative value -> need to exponentaite ![alt text](image-8.png)
+
+Raw python seems to vary from machine to machine in sum() -> might need to use numpy to keep it consistent
+
+PROCESS SO FAR SUMMARIZED:
+![alt text](image-9.png) -> EXPONENTATION + NORMALIZATION = SOFTMAX
+
+FORMULA FOR SOFTMAX:
+![alt text](image-10.png)
+
+CONTINUE AT 15:59 -> P.6 (Completed Softmax but now we will implement for a way to be used in our neural network)
