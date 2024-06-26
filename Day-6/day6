@@ -55,4 +55,26 @@ Negated:
 What happens when we have 2 neurons, each with their own bias. Takes 1st neuron's output as input:
 ![alt text](image-9.png)
 
-Stopped at 10:39
+Optimizer uses dimensions we don't necessarily understand properly (might be more than 3d, with different parameters??)
+
+ In this example of using pairs of neurons:
+ ![alt text](image-10.png)
+ - The first neuron sets the activatoin, 2nd neuron sets the deactivation pouint. Each neuron represents a section on the graph
+- First 7 points are used to offset that particular section. Last 7 points are used to offset entire function
+
+Individual neurons are responsible for small sections of the overall large neural network
+
+When both neurons are activated, area of effect comes into play??
+
+Real optimizer will probably not keep same order as seen in examlpes
+
+The larger the number of neurons in the hidden layers, the more improvement you should see in the rectified linear unit function matching with the expected result. (More area of effect!)
+
+To fit non linear problems with neural networks, we need 2 or more hidden layers. (also why we use hidden activation functions?)
+
+Dot product in numpy sometimes uses different data type. Very small difference
+
+Standford Deep learning course: https://cs231n.stanford.edu/
+
+If we find the network dying, meaning everything is starting to go to 0. We can initiate the bias as a non zero.
+
