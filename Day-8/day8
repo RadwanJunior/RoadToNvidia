@@ -1,0 +1,46 @@
+CONTINUE AT 15:59 -> P.6 (Completed Softmax but now we will implement for a way to be used in our neural network)
+
+We want to go from something like this: ![alt text](image.png) -> to a more batched approach
+
+keepdims keeps the same dimension -> helps with summing the batch in batches
+
+Issue with exponentiation?
+- Quickly becomes very large as the input to the exponential function grows
+- Doesn't take too long to reach an overflow (print(np.exp(1000)))
+
+How to prevent overflow?
+![alt text](image-1.png)
+With something like this: ![alt text](image-2.png)
+- The largest value is subtracted in each batch for each element in the set/feature
+- This leaves the largest value as 0 and leaves the smaller values as less than 0
+
+Exponentiation of 0 equals 1
+
+![alt text](image-3.png) -> range of all possible values after dealing with overflow/exponentiation issue
+
+How does subtracting the largest value affect the output of the softmax function?
+- Output is identically the same, but we have prevented ourselves from overflow errors
+![alt text](image-4.png)
+
+Issue with this implementation:
+![alt text](image-5.png)
+- This will get the max of all the inputs of all batches as this is implemented for an output layer
+- Probably would work, but not very efficient and not as intended
+
+How the output looks like for implementation in P6-2:
+![alt text](image-6.png)
+- This is 3 values per batch since each batch had shape/size 3 -> output layer must output 3 values
+
+# Need to actually train this model
+How to calculate how right or wrong?
+- Loss function
+
+
+
+Also check out these repos for learning about DSA for leetcode:
+https://github.com/thepranaygupta/Data-Structures-and-Algorithms
+https://github.com/Coder-World04/Complete-Data-Structures-and-Algorithms
+https://github.com/aish21/Algorithms-and-Data-Structures
+https://github.com/prakhar21/Learning-Data-Structures-from-Scratch
+https://github.com/krahets/hello-algo/blob/main/en/README.md
+https://github.com/hemansnation/God-Level-AI?tab=readme-ov-file -> AI engineer roadmap
