@@ -38,9 +38,8 @@ How to calculate how right or wrong?
 
 
 Also check out these repos for learning about DSA for leetcode:
-https://github.com/thepranaygupta/Data-Structures-and-Algorithms
-https://github.com/Coder-World04/Complete-Data-Structures-and-Algorithms
-https://github.com/aish21/Algorithms-and-Data-Structures
-https://github.com/prakhar21/Learning-Data-Structures-from-Scratch
-https://github.com/krahets/hello-algo/blob/main/en/README.md
-https://github.com/hemansnation/God-Level-AI?tab=readme-ov-file -> AI engineer roadmap
+https://github.com/thepranaygupta/Data-Structures-and-Algorithms -> 3. implementation of some DSA, some cheat sheets as well as courses
+https://github.com/Coder-World04/Complete-Data-Structures-and-Algorithms -> 1. Senior Software engineer walks us through how to get successul in an interview for tech DSA/System Design in efficient manner
+https://github.com/aish21/Algorithms-and-Data-Structures -> 3. notes about DSA and some solved leetcode quesitions
+https://github.com/krahets/hello-algo/blob/main/en/README.md -> 2. Really good "book" style with visuals and practice with code implementations
+https://github.com/hemansnation/God-Level-AI?tab=readme-ov-file -> 4. AI engineer roadmap, seems incomplete

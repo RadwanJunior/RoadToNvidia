@@ -1,0 +1,30 @@
+A neural network doesn't actually output a classification -> it actually outputs a probability distribution (a confidence score) 
+
+What is the mean absolute error?
+- A calculation of how far away the actual and prediction is for any "point" on a "graph"
+![alt text](image.png)
+- Goal would be to get as close to 0.00
+
+What is categorical cross-entropy?
+- ![alt text](image-1.png)
+- Loss function of choice for classification using softmax is generally this one
+- Get negative sum of target value multiplied by log of predicted value for each in the distribution
+- ![alt text](image-2.png)
+- Very convenvient on back propogation and optimization steps
+
+What is one-hot encoding?
+- ![alt text](image-3.png)
+- # of classes
+- target label position
+- vector with encoded position
+
+![alt text](image-4.png)
+- We use natural log
+- base e
+
+An example using categorical cross-entropy as well as one-hot encoding for classification problem:
+![alt text](image-5.png)
+
+![alt text](image-6.png)
+- Where the confidence was higher -> the loss was lower
+- Where the confidence is lower -> loss is higher
