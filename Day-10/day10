@@ -1,0 +1,20 @@
+Started studying Probability and Statistics as it is a large part of machine learning and AI, will be taking notes of work here:
+
+Set Theory:
+- ![alt text](image.png)
+- Intersection: A ∧ B -> all elements in both A and B
+- Union: A ∨ B -> all elements in A and B (no elements repeated twice)
+- Complement: A′ -> All elements not in A
+
+De morgan's laws in probability:
+- ![alt text](image-1.png)
+
+- (A ∨ B)′ -> everything not in A or B == A′ ∧ B′ -> everything not in A and not in B
+- ![alt text](image-2.png) -> first law visualized with set theory
+
+- (A ∧ B)′ -> everything not in both A and B == A′ ∧ B′ -> everything not in A or not in B
+- ![alt text](image-3.png)-> first law visualized with set theory
+
+Example including set theory, de morgan's laws:
+- ![alt text](image-4.png)
+
