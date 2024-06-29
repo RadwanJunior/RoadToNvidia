@@ -2,8 +2,8 @@ Started studying Probability and Statistics as it is a large part of machine lea
 
 Set Theory:
 - ![alt text](image.png)
-- Intersection: A ∧ B -> all elements in both A and B
-- Union: A ∨ B -> all elements in A and B (no elements repeated twice)
+- Intersection: A ∧ B -> all elements in both A and B -> event that both A and B occur (Also AB) -> AB == BA
+- Union: A ∨ B -> all elements in A and B (no elements repeated twice) -> event that either event A or B or both occurs (Also A or B, inclusive) -> A or B == B or A ---- ![alt text](image-9.png)
 - Complement: A′ -> All elements not in A
 
 De morgan's laws in probability:
@@ -17,4 +17,81 @@ De morgan's laws in probability:
 
 Example including set theory, de morgan's laws:
 - ![alt text](image-4.png)
+
+Example 2:
+- ![alt text](image-5.png) -> wording is very important to understanding the problem and the set theory diagrams for it
+
+De morgan's law can make difficult questions much easier given the information in the question:
+- ![alt text](image-6.png)
+
+Examples of de morgan's laws on 3 Sets instead of 2:
+- ![alt text](image-7.png)
+
+What does it mean that 2 sets are mutually exclusive:
+- ![alt text](image-8.png)
+- When 2 sets dont share any elements in the sample space -> this means that none of the elements in their sets happen at the same time -> meaning they are mutually exclusive
+- AKA disjoint events
+
+What is the addition rule:
+- Helps us find the probability of the union of two events
+- ![alt text](image-10.png) -> subtract the A ∧ B to remove the duplicate addition
+
+Special Addition rule/ME addition rule:
+- ![alt text](image-11.png) -> used when both sets don't share elements from the sample space at the same time
+
+Notation of A′:
+- ![alt text](image-12.png)
+
+Relation of A and A′:
+- ![alt text](image-13.png) -> A and A′ are ME events (they can't both happen at the same time/ don't share elements from the sample space at the same time)
+
+Calculating probability of an event given the sample space:
+- ![alt text](image-14.png)
+
+Calculating complement of Set's probability:
+- ![alt text](image-15.png)
+
+Pairwise intersection:
+- Intersections of Events given a sample space set
+- ![alt text](image-16.png) -> E ∧ G are both ME
+
+Calculating union of sets in 2 different ways:
+- ![alt text](image-17.png)
+
+Example given:
+- ![alt text](image-18.png) -> ![alt text](image-19.png) -> ![alt text](image-20.png)
+
+Example for venn diagrams given 3 events:
+- ![alt text](image-21.png) -> ![alt text](image-22.png) -> ![alt text](image-23.png)
+
+Permutations and combinations:
+- ![alt text](image-24.png)
+
+Permutation vs Combination:
+- Order matters for permutation whereas doesn’t matter for combination. Ex ab, ba is 2 for permutation but is 1 for combination.
+
+![alt text](image-25.png)
+
+Introduction to conditional probability:
+- P(2|Even) -> Probability it is a 2 given the reduced sample space is only even numbers from the Main sample space ![alt text](image-26.png)
+
+Conditional Probability definition:
+- ![alt text](image-27.png)
+
+Example of conditional probability:
+- ![alt text](image-28.png) -> ![alt text](image-29.png)
+
+Example 2:
+- ![alt text](image-30.png)
+
+Example 3:
+- ![alt text](image-31.png)
+
+Example 4:
+- ![alt text](image-32.png) -> ![alt text](image-33.png)
+- In this case since knowing this "given" information does not affect the elements being sampled -> it is independet events
+
+Conditional Probability forumla 2 finding a union of 2 sets given 1 normal set:
+- ![alt text](image-34.png)
+
 
