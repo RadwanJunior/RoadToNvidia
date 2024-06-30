@@ -25,3 +25,46 @@ Example 5:
 
 Example 6:
 - ![alt text](image-46.png) -> knowing one event does not change the probability of the other == independent
+
+Multiplication rule/product rule:
+- ![alt text](image.png)
+- If independent...simplifies to P(A) or P(B) -> ![alt text](image-1.png) -> ![alt text](image-2.png)
+
+Example 1:
+- ![alt text](image-3.png)
+
+Multiplicative rule is true in general...but not always helpful:
+- See example: ![alt text](image-4.png) -> ![alt text](image-5.png) -> ![alt text](image-6.png)
+
+We need more info:
+- ![alt text](image-7.png) -> learn to understand when equations are useful
+
+Multiplication rule for more than 1 event:
+- ![alt text](image-8.png)
+
+Example with 3 events:
+- ![alt text](image-9.png) -> the 2 other forms dont work... ![alt text](image-10.png)
+- Final solution: ![alt text](image-11.png)
+
+Law of Total Probability:
+- Given that there is a sample space B with B1, B2, B3 that are mutually exclusive events and span the entire space: ![alt text](image-12.png) -> ![alt text](image-13.png)
+- ![alt text](image-14.png)
+
+Another little form of only 2 "Bs" making up the space:
+- ![alt text](image-15.png) -> a little identity that is useful
+
+- Using product rule we can simplify the equation to something a little more useful: ![alt text](image-16.png)
+
+Classic "defective part" law of total probability question:
+- ![alt text](image-17.png) -> ![alt text](image-18.png)
+- Solution using Tree diagram: ![alt text](image-19.png) (Conditional probabilities at the D) -> ![alt text](image-20.png)
+
+Another Example:
+- ![alt text](image-21.png) -> ![alt text](image-22.png)
+
+Bayes Theorem:
+- ![alt text](image-23.png)
+
+Example of Bayes Theorem:
+- ![alt text](image-24.png)
+
