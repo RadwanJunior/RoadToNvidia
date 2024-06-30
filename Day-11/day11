@@ -1,0 +1,27 @@
+Independent Events:
+- ![alt text](image-35.png) -> 2 events are said to be independent if and only if they're intersection is the product of their individual probabilities
+- ![alt text](image-36.png) -> ![alt text](image-37.png)
+
+
+Example:
+- ![alt text](image-38.png)
+
+Example 2:
+- ![alt text](image-39.png)
+
+Example 3:
+- ![alt text](image-40.png)
+
+Example 4 with Complement:
+- ![alt text](image-41.png)
+
+Probability rules:
+- ![alt text](image-42.png)
+- Visualizing why: ![alt text](image-43.png) -> ratio in A and A′ stays the same (probability calculated still works to find independence or not)
+- ![alt text](image-44.png)
+
+Example 5: 
+- ![alt text](image-45.png)
+
+Example 6:
+- ![alt text](image-46.png) -> knowing one event does not change the probability of the other == independent
